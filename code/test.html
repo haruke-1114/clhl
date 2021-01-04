@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CLHL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/01.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="/img/logo.png" width="150" height="100" title="logo" />
+        <h2 align="center">新 增 註 冊</h2>
+    </div>
+    <hr />
+    <form action="DB.php" method="post" align="center">
+        <input type=hidden name="method" value="insert">
+        <table align="center">
+            <tr>
+                <th>帳號：</th>
+                <td><input type="text" name="account"></td>
+            <tr>
+                <th>密碼：</th>
+                <td><input type="text" name="password"></td>
+            </tr>
+            <tr>
+                <th>名稱：</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>手機號碼：</th>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <th>生日：</th>
+                <td><input type="date" style="font-size: 1.3rem" name="birthday"></td>
+            </tr>
+            <tr>
+                <th>性別：</th>
+                <td><input type="text" name="sex"></td>
+            </tr>
+            <tr>
+                <th>電子信箱：</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>最高學歷：</th>
+                <td><input type="text" name="school"></td>
+            </tr>
+            <tr>
+                <th>工作經驗：</th>
+                <td>
+                    <select name="work" style="width: 177px;">
+                        <option value="elementary">國小</option>
+                        <option value="secondary">國中</option>
+                        <option value="highschool">高中</option>
+                        <option value="university">大學</option>
+                        <option value="master">碩士</option>
+                        <option value="phd">博士</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>居住地：</th>
+                <td><input type="text" name="place"></td>
+            </tr>
+
+
+        </table>
+        <input type="submit" value="新增">
+</body>
+
+</html>
